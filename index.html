@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <title>Ресторан</title>
+    <meta charset="UTF-8" /> <!-- кодування UTF-8 для підтримки українських символів. -->
+    <meta http-equiv="content-type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- оптимізує сторінку для мобільних пристроїв. -->
+    <meta name="keywords" content="Їжа, бургери, поїсти, ресторан" /> <!-- ключові слова для SEO. -->
+    <meta name="description" content="Сайт для замовлення їжі додому" /> <!-- опис сайту для пошукових систем. -->
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    
+    <!-- Підключення шрифтів -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet" />
+
+    <!-- Підключення шрифтів -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<div id="fixed" class="fixed_model"></div>
+
+<div class="wrapper">
+    <header class="header">
+            <nav class="container">
+                <div class="header_line">
+                    <div class="header_logo">
+                        <img src="icon.png" alt="Логотип сайта" />
+                    </div>
+                    <!-- ./header_logo -->
+
+                    <div class="nav">
+                        <a href="index.html">ГОЛОВНА</a>
+                        <a href="#menu_anc">МЕНЮ</a>
+                        <a href="#menu_history">ПРО НАС</a>
+                        <a href="#popup_order_table">БРОНЬ</a>
+                    </div>
+                    <!-- ./nav -->
+
+                    <div class="cart">
+                        <a href="#">
+                            <img class="cart_image" src="img/items/cart.png" alt="Иконка корзины" />
+                        </a>
+                    </div>
+                    <!-- ./cart -->
+
+                    <div class="phone">
+                        <div class="phone_holder">
+                            <div class="phone_image">
+                                <img src="img/items/phone.png" alt="Иконка телефона">
+                            </div>
+                            <div class="number">
+                                <a class="phone_number" href="#">+999-888-76-54</a>
+                            </div>
+                        </div>
+                        <!-- ./phone_holder -->
+
+                        <div class="phone_text">Зв'яжіться з нами для <br> бронювання
+                        </div>
+                    </div>
+                    <!-- ./phone -->
+
+                    <div class="header_btn_container">
+                        <a href="#popup_order_table" class="header_btn">ЗАМОВИТИ СТОЛИК</a>
+                    </div>
+
+                    <div class="phone_ori_menu">
+
+                        <button id="cart_ori_phone">
+                            <img src="img/items/cart.png" alt="Иконка корзины" />
+                        </button>
+
+                        <button id="menu_ori_phone">
+                            <img src="img/items/phone_menu.png" alt="Фото меню" /> 
+                        </button>
+
+                        <div id="menu" class="phone_ori_slide disp">
+                            <a class="nav_item block" href="index.html">ГОЛОВНА</a>
+                            <a class="nav_item block" href="#menu_anc">МЕНЮ</a>
+                            <a class="nav_item block" href="#menu_history">ПРО НАС</a>
+                            <a class="nav_item block" href="#popup_order_table">БРОНЬ</a>
+                        </div>
+
+                    </div>
+                    <!-- ./phone_ori_menu -->
+                </div>
+                <!-- ./header_line -->
+            </nav>
+            <!-- ./container -->
+
+            <div class="header_down">
+                <div class="container">
+                    <div class="header_title">
+                        Ласкаво просимо до
+
+                        <div class="header_subtitle">
+                            Нашого ресторану
+                        </div>
+
+                        <div class="header_under_subtitle">
+                            ДІМ НАЙКРАЩОЇ ЇЖІ
+                        </div>
+
+                        <div class="header_btn_down_container">
+                            <a href="#menu_anc" class="header_btn_down">ПЕРЕГЛЯНУТИ МЕНЮ</a>
+                        </div>
+
+                    </div>
+                    <!-- ./header_title -->
+                </div>
+                <!-- ./container -->
+            </div>
+           <!-- ./header_down -->
+
+    </header>
+
+    <div class="cards">
+        <div class="container">
+            <div class="cards_holder">
+                <div class="card">
+                    <div class="card_image">
+                        <img class="card_img" src="img/dishes/dishes_for_card.png" alt="Картинка блюда" />
+                    </div>
+
+                    <div class="card_title">
+                        <h3>Магічна <span>Атмосфера</span></h3>
+                    </div>
+
+                    <div class="card_desc">
+                        У нашому закладі панує магічна атмосфера
+                        наповнена смачними ароматами
+                    </div>
+                </div>
+                <!-- ./card -->
+
+                <div class="card">
+                    <div class="card_image">
+                        <img class="card_img" src="img/dishes/dishes_for_card.png" alt="Картинка блюда" />
+                    </div>
+
+                    <div class="card_title">
+                        <h3>Найкраща якість <span>Їжі</span></h3>
+                    </div>
+
+                    <div class="card_desc">
+                        Якість нашої
+                        Їжі - відмінне!
+                    </div>
+                </div>
+                <!-- ./card -->
+
+                <div class="card">
+                    <div class="card_image">
+                        <img class="card_img" src="img/dishes/dishes_for_card.png" alt="Иконка блюда" />
+                    </div>
+
+                    <div class="card_title">
+                        <h3>Недорога <span>Їжа</span></h3>
+                    </div>
+
+                    <div class="card_desc" id="menu_history">
+                        Ціна нашої Їжі
+                        залежить тильки від її
+                        кулькості. Якість
+                        завжди на висоті!
+                    </div>
+                </div>
+            <!-- ./card -->
+            </div>
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./cards -->
+
+    <div class="history">
+        <div class="container">
+            <div class="history_holder">
+                <div class="history_info">
+                    <div class="history_title" >
+                        Наша <span>Істория</span> 
+                    </div>
+
+                    <div class="history_desc">
+                        Як і в будь-якого іншого самобутнього місця, ми маємо свою, особливу історію.
+                        Ідея ресторану прийшла засновникам несподівано. Під час прогулянки лісом творець
+                        нашого ресторану застряг за сотні кілометрів від найближчого населеного пункту.
+                        Вдалині від цивілізації і зв'язку їм довелося вчасно облаштувати собі нехитрий побут,
+                        добувати та готувати собі їжу.
+                    </div>
+
+                    <div class="history_numbers">
+                        <div class="number_item">
+                            93 <span>Напої</span>
+                        </div>
+
+                        <div class="number_item">
+                            206 <span>Їжа</span>
+                        </div>
+
+                        <div class="number_item">
+                            71 <span>Закуски</span>
+                        </div>
+                    </div>
+                    <!-- ./history_numbers -->
+                </div>
+                <!-- ./history_info -->
+                <div class="history_images">
+                    <img src="img/history/image_history.png" class="history_img_0" alt="Фотография блюда" />
+                    <img src="img/history/image_history_2.png" class="history_img_1" alt="Фотография блюда" />
+                    <img src="img/history/image_history_3.png" class="history_img_2" alt="Фотография блюда" />
+                </div>
+                <!-- ./history_images -->
+            </div>
+            <!-- ./history_holder -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./history -->
+
+    <div class="book_table">
+        <div class="container">
+            <div class="book_table_holder">
+                <div class="book_table_left">
+                    <div class="left_title">
+                        Відсвяткуйте в одному з <br>
+                        найкращих ресторанів.
+                    </div>
+
+                    <div class="left_text">
+                        Тільки цього місяця бізнес-ланч від 50 ₴
+                    </div>
+                </div>
+                <!-- ./book_table_left -->
+
+                <div class="book_table_right">
+                    <div class="right_button">
+                        <a href="#popup_order_table" class="right_btn">ЗАМОВИТИ СТОЛИК</a>
+                    </div>
+                </div>    
+                <!-- ./book_table_right -->
+            </div>
+            <!-- ./book_table_holder -->
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./book_table -->
+
+    <div class="dishes">
+        <div class="container">
+            
+            <div class="dishes_title">
+                Наші <span>Страви</span> 
+            </div>
+
+            <div class="dishes_content">
+                <div class="pizza">
+                    <img class="pizza_img" src="img/dishes/pizza.png" alt="Картинка пицы" />
+                </div>
+
+                <div class="burgers">
+                    <div class="burger_item">
+                        <img class="burger_img" src="img/dishes/burger.png" alt="Картинка бургера" />
+                        <div class="burger_text">
+                            Гамбургер міни <br> <span class="lines_dishes">--------------------</span>  50 ₴
+                        </div>
+                    </div>
+
+                    <div class="burger_item">
+                        <img class="burger_img" src="img/dishes/burger.png" alt="Картинка бургера" />
+                        <div class="burger_text">
+                            Гамбургер міни <br> <span class="lines_dishes">--------------------</span> 50 ₴
+                        </div>
+                    </div>
+                    
+                    <div class="burger_item">
+                        <img class="burger_img" src="img/dishes/burger.png" alt="Картинка бургера" />
+                        <div class="burger_text">
+                            Гамбургер міни <br> <span class="lines_dishes">--------------------</span>  50 ₴
+                        </div>
+                    </div>
+                </div>
+                <!-- ./burgers -->
+
+            </div>
+            <!-- ./menu -->
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./dishes -->
+
+    <div class="menu" id="menu_anc">
+        <div class="container">
+
+            <div class="menu_title">
+                Наше меню
+            </div>
+
+            <div class="menu_items">
+                <div class="menu_card">
+
+                    <div class="block_recommended">
+                        РЕКОМЕНДОВАНО
+                    </div>
+
+                    <div class="menu_card_img">
+                        <img class="menu_card_img" src="img/dishes/big_burger.png" alt="Картинка бургера" />
+                        <!-- <div class="price">
+                            <img class="price_menu_img" src="img/items/circle_menu_price.png" alt="Картинка цены" />
+                            <div class="price_text">
+                                420
+                            </div>
+                            ./price_text
+                        </div>
+                        ./price -->
+                    </div>
+                    <!-- ./menu_card_img -->
+
+                    <div class="menu_title_card">
+                        Гамбургер максі
+                    </div>
+
+                    <div class="menu_desc">
+                        Максимально товстий <br>
+                        шар м'яса
+                    </div>
+
+                    <div class="menu_button">
+                        <a class="menu_btn">ЗАМОВИТИ</a>
+                    </div>
+                </div>
+                <!-- ./menu_card -->
+                <div class="menu_card">
+                    <div class="menu_card_img">
+                        <img class="menu_card_img" src="img/dishes/big_burger.png" alt="Картинка бургера" />
+                        <!-- <div class="price">
+                            <img class="price_menu_img" src="img/items/circle_menu_price.png" alt="Картинка цены" />
+                            <div class="price_text">
+                                420
+                            </div>
+                            ./price_text
+                        </div>
+                        ./price -->
+                    </div>
+                    <!-- ./menu_card_img -->
+
+                    <div class="menu_title_card">
+                        Гамбургер максі
+                    </div>
+
+                    <div class="menu_desc">
+                        Максимально товстий <br>
+                        шар м'яса
+                    </div>
+
+                    <div class="menu_button">
+                        <a class="menu_btn">ЗАМОВИТИ</a>
+                    </div>
+                </div>
+                <!-- ./menu_card -->
+
+                <div class="menu_card">
+                    <div class="menu_card_img">
+                        <img class="menu_card_img" src="img/dishes/big_burger.png" alt="Картинка бургера" />
+                        <!-- <div class="price">
+                            <img class="price_menu_img" src="img/items/circle_menu_price.png" alt="Картинка цены" />
+                            <div class="price_text">
+                                420
+                            </div>
+                            ./price_text
+                        </div>
+                        ./price -->
+                    </div>
+                    <!-- ./menu_card_img -->
+
+                    <div class="menu_title_card">
+                        Гамбургер максі
+                    </div>
+
+                    <div class="menu_desc">
+                        Максимально товстий <br>
+                        шар м'яса
+                    </div>
+
+                    <div class="menu_button">
+                        <a class="menu_btn">ЗАМОВИТИ</a>
+                    </div>
+                </div>
+                <!-- ./menu_card -->
+
+            </div>
+            <!-- ./menu_items -->
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./menu -->
+
+    <div class="comment">
+        <div class="container">
+
+            <div class="comment_text">
+                Я надовго запам'ятаю мій День народження, проведений
+                й у цьому ресторані! Шматок рідної Вірменії! Окреме дякую за
+                комплепент у вигляді фруктової тарілки. Рекомендуємо цей ресторан
+                своїм друзям та родичам також за кордоном, що подорожують до Санкт-Петербурга!!!
+            </div>
+
+            <div class="comment_image">
+                <img class="comment_img" src="img/items/comment_image.png" alt="Фото человека" />
+            </div>
+
+            <div class="comment_type">
+                Відвідувач
+            </div>
+
+            <div class="comment_name">
+                Микола
+            </div>
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./comment -->
+
+    <div class="gallery">
+        <div class="container">
+
+            <div class="gallery_title">
+                Галерея <span>Страв</span>
+            </div>
+
+            <div class="gallery_content">
+
+                <div class="gallery_left">
+                    <div class="gallery_up">
+                        <img class="img_gallery high" src="img/dishes/dishes_gallery_1.png" alt="Фотография блюда" />
+                    </div>
+
+                    <div class="gallery_down">
+                        <img class="img_gallery" src="img/dishes/dishes_gallery_2.png" alt="Фотография блюда" />
+                        <img class="img_gallery" src="img/dishes/dishes_gallery_3.png" alt="Фотография блюда" />
+                    </div>
+                </div>
+
+                <div class="gallery_right">
+                    <div class="gallery_up">
+                        <img class="img_gallery" src="img/dishes/dishes_gallery_2.png" alt="Фотография блюда" />
+                        <img class="img_gallery" src="img/dishes/dishes_gallery_3.png" alt="Фотография блюда" />
+                    </div>
+
+                    <div class="gallery_down">
+                        <img class="img_gallery high" src="img/dishes/dishes_gallery_1.png" alt="Фотография блюда" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./gallery_content -->
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./gallery -->
+
+    <div class="cookers">
+        <div class="container">
+
+            <div class="cooker_title">
+                Наші <span>Кухарі</span> 
+            </div>
+
+            <div class="cookers_content">
+                <img class="cooker_img" src="img/cookers/cooker_1.png" alt="Фото повара" />
+                <img class="cooker_img" src="img/cookers/cooker_2.png" alt="Фото повара" />
+                <img class="cooker_img" src="img/cookers/cooker_3.png" alt="Фото повара" />
+            </div>
+
+        </div>
+        <!-- ./container -->
+    </div>
+    <!-- ./cookers -->
+
+    <footer class="footer">
+        <div class="container">
+            Всі права захищені | Copyright 2024
+        </div>
+    </footer>
+
+</div>
+<!-- ./wrapper -->
+
+<div id="popup_order_table" class="popup">
+    <div class="popup_body">
+        <a href="#fixed" class="popup_area"></a>
+        <div class="popup_content">
+            <a href="#fixed" class="popup_close">X</a>
+            <div class="popup_title">Заповніть форму <br>і ми вам передзвонимо</div>
+            <div class="popup_text">
+                <form action="index.html#popup_after" method="post" id="formPhone" autocomplete="off">
+                    <input class="form_text" type="text" name="m_name" placeholder="Як Вас звати?" required />
+                    <input class="form_text art-stranger" type="number" name="m_phone" placeholder="Ваш номер телефону?" id="phone" required />
+
+                    <div class="form_button_container">
+                        <button type="submit" class="form_btn">НАДІСЛАТИ</button>
+                    </div>
+
+                </form>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+
+<div id="popup_after" class="popup">
+    <div class="popup_body">
+        <a href="#fixed" class="popup_area"></a>
+        <div class="popup_content">
+            <a href="#fixed" class="popup_close">X</a>
+            <div class="popup_title">Дякуємо! <br> Найближчим часом ми вам передзвонимо</div>
+        </div>
+    </div>
+</div>
+<!-- Скрипти -->
+<script defer src="js/script.js"></script>
+<script defer src="js/form.js"></script>
+
+</body>
+</html>
